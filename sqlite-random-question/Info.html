@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <style>
+        .glow-on-hover1 {
+          border: none;
+          outline: none;
+          color: #111;
+          cursor: pointer;
+          border-radius:50%;
+          padding: 15px 15px;
+          text-decoration: none;
+          z-index: 0;
+  }
+
+  .glow-on-hover1:before {
+      content: '';
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+      position: absolute;
+      top: -2px;
+      left:-2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing1 20s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 50px;
+  }
+
+  .glow-on-hover1:active {
+      color: #fff
+  }
+
+  .glow-on-hover1:active:after {
+      background: transparent;
+  }
+
+  .glow-on-hover1:hover:before {
+      opacity: 1;
+  }
+
+  .glow-on-hover1:after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background:#6497b1;
+      left: 0;
+      top: 0;
+      border-radius: 50px;
+  }
+
+@keyframes glowing1 {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+    </style>
+
+</head>
+<body style="background-color:#011f4b;display: flex;
+            justify-content: center; /* Centrează conținutul pe axa orizontală */
+            align-items: center; /* Centrează conținutul pe axa verticală */
+            height: 100vh; /* Înălțimea completă a ferestrei */
+            margin: 0; /* Elimină marginile implicite ale corpului */">
+
+
+<div style="background-color:#3A6D8C;border-radius:7%;padding:15px 25px;text-align:center;
+            font-family: 'EB Garamond', serif;">
+    <p style="max-width:750px;color:white;font-family: 'Cormorant Garamond', serif;
+        font-size:20px;">
+        <b style="font-size:30px;">What is Entropy?</b><br><br>
+        Entropy is a scientific concept that
+        is most commonly associated with a state of disorder, randomness, or uncertainty.
+        <br><br><br>
+        <b style="font-size:30px;">Where does it come from?</b><br><br>
+        It is from <i>curiosity</i>.<br><br><br>
+
+        <b style="font-size:30px;">How it works?</b><br><br>
+        Click on the <b>➤</b> from the main page. New question will pop out.
+        Try to answer or find them on the online.<br><br>
+        Discover the world and stay curios!
+
+        <br><br><br>
+
+        ____________________________________________________________________
+        <br><br><br>
+
+        <i> “I have no special talents. I am only passionately curious.”</i>
+
+        <br>-Albert Einstein
+
+    </p>
+</div>
+
+
+<button class="glow-on-hover1"
+        style="border-radius: 50%;
+               position: fixed;
+               bottom: 25px;
+               right: 25px;
+               width: 50px;
+               height: 50px;
+               border: none;
+               background-color: #b3cde0;
+               transition: font-size 0.2s ease;
+               font-family: 'Cormorant Garamond', serif;
+               font-size: 20px;
+
+               z-index: 1000;
+               color: black;">
+
+    <a onclick="window.location.href='/back'"
+       style="text-decoration: none; color: inherit; display: block; height: 100%; width: 100%;">◀
+    </a>
+</button>
+
+
+
+
+</body>
+</html>
